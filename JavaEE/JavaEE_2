@@ -1,3 +1,24 @@
+Spring：
+
+Spring是分层的JavaEE full stack轻量级开源框架。
 
 Domain层、Service层都是业务逻辑层。
 
+IoC（Inverse of Control）:控制反转,谁用谁创建 变成 由Spring容器来创建。
+
+DI（依赖注入）：从Spring容器角度来看，Spring容器负责将被依赖对象赋值给调用者的成员变量。
+
+Ioc和DI本质上含义相同，不过二者是从不同的角度看待问题。
+
+AOP（Aspect Oriented Programming）：面向切面编程
+
+在实际开发中，通常服务器端在采用三层体系架构，分别为表示层（Web）、业务逻辑层（Service）、持久层（Dao），Spring对每一层都提供了技术支持。
+
+Spring框架的七大优点：
+  1、非侵入式设计
+  2、方便解耦、简化开发
+  3、支持AOP
+  4、支持声明式事务处理
+  5、方便程序测试
+  6、方便继承各种优秀框架
+  7、降低JavaEE API的使用难度
