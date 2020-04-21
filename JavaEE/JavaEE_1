@@ -1,4 +1,20 @@
+
 编程要依赖于抽象，不要依赖于具体上。
 
 程序中一旦出现了new 就是不好的东西，程序的耦合性太大。
 
+1、配置maven/conf/下的settings.xml,添加阿里云镜像。
+
+2、在Eclipse里修改maven的User Settings，修改为上述settings。
+
+3、配置Tomcat服务器。
+
+4、创建maven项目，archetype里面找org.apache.maven.archetypes maven-archetype-webapp
+
+5、讲过上述创建项目会有错误，右键点击项目-属性
+    a、Java Build Path选择本地jre
+    b、修改Targeted Runtimes
+    c、修改compiler版本
+    d、facets修改Java版本
+    
+6、在maven项目中的pom.xml里添加依赖，在maven repository里搜索mysql jdbc。
