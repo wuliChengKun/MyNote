@@ -22,3 +22,29 @@ Spring框架的七大优点：
   5、方便程序测试
   6、方便继承各种优秀框架
   7、降低JavaEE API的使用难度
+
+创建ApplicationContext接口实例，通常方法：
+  1、通过ClassPathXmlApplicationContext创建   
+  ApplicationContext applicationContext = new ClassPathXmlApplicationContext(String configLocation);
+  ClassPathXmlApplicationContext会从路径classPath中寻找指定的xml配置文件，找到并装载完成ApplicationContext的实例化工作。
+  
+  2、通过FileSystemXmlApplicationContext创建
+  ApplicationContext applicationContext = new FileSystenXmlApplicationContext(String configLocation);
+  
+  3、在web里面通过web.xml配置（以后再说）
+  
+创建Spring容器后，就可以获取Spring容器中的Bean。Spring获取Bean的实例通常采用两种方法：
+  1、Object getBean(String name);
+  根据Bean的id或name来获取指定的Bean，获取之后要进行强制类型转化。
+  2、<T>T getBean(Class<T>requiredType);
+  根据类的类型来获取Bean的实例。
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
