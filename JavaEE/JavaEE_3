@@ -1,1 +1,11 @@
 
+Bean:
+
+把Spring看成大工厂，则Bean就是该工厂的产品。
+
+大部分都是：用xml做基础配置，用注解做Bean的注入管理，Bean的配置。
+
+<bean>标签里面id、name不是唯一的，class是唯一的，如过没有id和name，class就当作name
+也就是说 只有class是必须的。
+
+
