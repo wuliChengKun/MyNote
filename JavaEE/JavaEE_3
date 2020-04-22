@@ -8,4 +8,65 @@ Bean:
 <bean>标签里面id、name不是唯一的，class是唯一的，如过没有id和name，class就当作name
 也就是说 只有class是必须的。
 
+Spring实例化Bean有三种方式：
+  1、构造器实例化
+  2、静态工厂方式实例化
+  3、实例工厂方式实例化
+
+Spring中Bean的实例定义了七种作用域：
+  singleton 单例
+  prototype 原型
+  以上两种是对象创建。
+  request
+  session
+  globalSession
+  application
+  websocket
+  
+  
+singleton是默认的作用域
+
+对需要保持会话状态的Bean应该使用prototype作用域。线程。
+
+Bean的生命周期管理：singleton作用域的Bean的生命周期，由Spring管理，Spring可以精确的知道该Bean何时被创建、何时初始化完成、何时被销毁。
+  prototype作用域的Bean，Spring只负责创建，当容器创建了Bean实例后，Bean的实例就交给客户端代码来管理，Spring容器将不再跟踪其生命周期。
+
+在singleton作用域下：Spring创建的时候（也就是说Context上下文创建的时候），它所有的实例全部就创建好了，而不是在getBean的时候创建。
+在prototype作用域下不是这样。
+
+Spring容器支持多种形式的Bean的装配方式：
+  1、基于xml的装配
+  2、基于注解Annotation的装配
+  3、自动装配
+
+前面提到的User类、Conn类都是Bean工具类。
+
+主要注解：
+@Component：用于描述Spring中的Bean，泛化的概念，仅仅表示一个组件。
+@Repository：用于将数据访问层（DAO）的类标识为Spring中的Bean。
+@Service：用于将业务层（Service）的类标识为Spring中的Bean。
+@Controller：用于将控制层（Controller）的类标识为Spring中的Bean。
+@Autowired：用于对Bean的属性变量、属性的setter方法及构造方法进行标注，配合对应的注解处理器完成Bean的自动配置工作。
+@Resource：其作用与Autowired一样。
+@Qualifier：与@Autowired注解配合使用，会将默认的按Bean类型装配修改为按Bean的实例名称配置，Bean的实例名称由@Qualifier注解的参数指定。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
