@@ -38,6 +38,15 @@ Spring框架的七大优点：
   根据Bean的id或name来获取指定的Bean，获取之后要进行强制类型转化。
   2、<T>T getBean(Class<T>requiredType);
   根据类的类型来获取Bean的实例。
+
+尽量把ApplicationContext的namespace里的spring版本号去掉
+
+编程时 尽量先写接口再写实现类
+
+在测试的时候，实现一个接口。而不是实现具体的类。
+
+property是成员变量的意思 ref是引用的意思   把ref的实例 注入到 property里面去  这就是依赖注入。
+
   
   
   
