@@ -1,0 +1,16 @@
+
+Spring JDBC 比 JDBC简单，简化了开发人员的操作。
+
+注意数据库的url一定要添加时区，并且版本也要保持一致。
+MySQL最新版本的driverClassName 是 com.mysql.cj.jdbc.Driver
+
+
+
+
+
+
+
+
+
+
+
