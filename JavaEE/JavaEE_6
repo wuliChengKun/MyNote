@@ -1,0 +1,28 @@
+
+Spring事务管理：
+
+事务的操作要么全做，要么全不做，是一个不可分割的工作单位。
+
+事务的特性：
+  原子性
+  隔离性
+以上两个是并发控制。
+  一致性
+  持久性
+以上两个是日志恢复。
+
+常见的事务并发异常：
+
+脏写，丢失更新，脏读，不可重复读。
+
+Platform TransactionManager
+TransactionDefinition
+TransactionStatus
+
+
+
+
+
+
+
+
